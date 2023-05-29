@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driven eats</title>
+    <link rel="icon" href="https://pixel.cuboup.com/wp-content/uploads/edd/2022/06/Comida-Lanche-Hamburguer.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="topo-vermelho">
+        <p class="escrito-topo-um">
+            DrivenEats
+        </p>
+        <p class="escrito-topo-dois">
+            Sua comida em 6 minutos
+        </p>
+    </div>
+    <div class="container">
+        <p class="primeiro-prato">
+            Primeiro Prato
+        </p>
+        
+        <div class="todos-os-pratos">
+            <div class="prato-1" onclick="selecionarPrato('.prato-1')" data-test="dish">
+                <img class="imagem" src="frango_yin_yang.png">
+                <p class="titulo-comida" data-test="item-name">Frango Yin Yang</p>
+                <p class="descrição-prato">Um pouco de batata, um pouco de salada</p>
+                <p class="valor"  data-test="item-price">R$ 10,30</p>
+            </div>
+            <div class="prato-2" onclick="selecionarPrato('.prato-2')" data-test="dish">
+                <img class="imagem" src="frango_yin_yang.png">
+                <p class="titulo-comida" data-test="item-name">Lasanha</p>
+                <p class="descrição-prato">Lasanha, arroz branco, salada</p>
+                <p class="valor" data-test="item-price">R$ 50,80</p>
+            </div>
+            <div class="prato-3" onclick="selecionarPrato('.prato-3')" data-test="dish">
+                <img class="imagem" src="frango_yin_yang.png">
+                <p class="titulo-comida" data-test="item-name">Churrasco</p>
+                <p class="descrição-prato">500g de carne, um pouco de salada</p>
+                <p class="valor" data-test="item-price">R$ 18,90</p>
+            </div>
+        </div>
+
+        <p class="segundo-bebida">
+            Agora, sua bebida
+        </p>
+
+        <div class="todas-as-bebidas">
+            <div class="bebida-1" onclick="selecionarBebida('.bebida-1')"  data-test="drink">
+                <img class="imagem" src="coca-cola.png">
+                <p class="titulo-bebida" data-test="item-name">Coca-Cola</p>
+                <p class="descrição-bebida">500ml</p>
+                <p class="valor" data-test="item-price">R$ 5,00</p>
+            </div>
+            <div class="bebida-2" onclick="selecionarBebida('.bebida-2')"  data-test="drink">
+                <img class="imagem" src="coca-cola.png">
+                <p class="titulo-bebida" data-test="item-name">Suco de Cajú</p>
+                <p class="descrição-bebida">1 litro</p>
+                <p class="valor" data-test="item-price">R$ 20,90</p>
+            </div>
+            <div class="bebida-3" onclick="selecionarBebida('.bebida-3')"  data-test="drink">
+                <img class="imagem" src="coca-cola.png">
+                <p class="titulo-bebida" data-test="item-name">Água</p>
+                <p class="descrição-bebida">600ml</p>
+                <p class="valor" data-test="item-price">R$ 3,25</p>
+            </div>
+        </div>
+
+        <p class="segundo-bebida">
+            Por fim, sua sobremesa
+        </p>
+
+        <div class="todas-as-sobremesas">
+            <div class="sobremesa-1" onclick="selecionarSobremesa('.sobremesa-1')"  data-test="dessert" >
+                <img class="imagem" src="pudim.png">
+                <p class="titulo-sobremesa" data-test="item-name">Pudim de coco</p>
+                <p class="descrição-sobremesa">Pudim de coco</p>
+                <p class="valor" data-test="item-price">R$ 9,00</p>
+            </div>
+            <div class="sobremesa-2" onclick="selecionarSobremesa('.sobremesa-2')"  data-test="dessert">
+                <img class="imagem" src="pudim.png">
+                <p class="titulo-sobremesa" data-test="item-name">Sorvete</p>
+                <p class="descrição-sobremesa">500gramas de sorverte</p>
+                <p class="valor" data-test="item-price">R$ 10,89</p>
+            </div>
+            <div class="sobremesa-3" onclick="selecionarSobremesa('.sobremesa-3')"  data-test="dessert">
+                <img class="imagem" src="pudim.png">
+                <p class="titulo-sobremesa" data-test="item-name">Maçã do amor</p>
+                <p class="descrição-sobremesa">1 maçã</p>
+                <p class="valor" data-test="item-price">R$ 2,00</p>
+            </div>
+        </div>
+        <div class="rodape">
+            <button class="botão-pra-habilitar" onclick=" whatzapp()" data-test="order-btn" >
+                <p class="escrito-branco"> Selecione os 3 itens
+                para fechar o pedido </p>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
